@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileRipple</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <txt style="font-size: 1.5rem;"><a href="/"><img style="display: inline;height: 1.5rem;" src="/static/FileRipple.png"> FileRipple - Back</a> | History of {{ .user }}</txt>
+    <hr>
+    {{ range .files }}
+        <br>
+        <a href="/api/v1/download/{{ .User }}/{{ .Frename }}" target="_blank">{{ .Frename }}</a>
+    {{ end }}
+</body>
+</html>
