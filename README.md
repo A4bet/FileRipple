@@ -4,3 +4,8 @@ I don't know really much to say, but I built this because of Discord's upload si
 
 /static/ Directory required for Logo & Favicon
 /uploadedfiles/ Directory require for the uploaded files
+
+API:
+/api/v1/upload/ POST (CONTENT: file(FILE, POST) , user(COOKIE) )
+/api/v1/download/user/file GET
+/api/v1/delete/user/file GET (CONTENT: user(COOKIE) )
